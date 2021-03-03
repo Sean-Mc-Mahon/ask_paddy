@@ -1,45 +1,144 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Ask Paddy
 
-Welcome USER_NAME,
+### [Live Site](https:)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+### [GitHub](https://github.com/Sean-Mc-Mahon/ask-paddy)
 
-## Gitpod Reminders
+![Various Devices](https:)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Ask Paddy is Team 17's entry for the [Code Institute](https://codeinstitute.net/) March hackathon. The idea is that users can ask St. Patrick any question they want, an *almost* direct link to God.
 
-`python3 -m http.server`
+# Table of Contents
 
-A blue button should appear to click: *Make Public*,
+**<details><summary>Project overview</summary>**
+* [**_Project overview_**](#project-overview)
+* [**_User Stories_**](#user-stories)
+</details>
 
-Another blue button should appear to click: *Open Browser*.
+**<details><summary>UX</summary>**
+    * [_Color Scheme_](#color-scheme)
+    * [_Typography_](#typography)
+    * [_Media_](#Media)
+    * [_Wireframes_](#wireframes)
+</details>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**<details><summary>Features</summary>**
+* [**_Existing Features_**](#existing-features)
+* [**_Features Left to Implement_**](#features-left-to-implement)
+</details>
 
-A blue button should appear to click: *Make Public*,
+**<details><summary>Technologies Used</summary>**
+* [**_Libraries_**](#libraries)
+* [**_Version Control_**](#version-control)
+</details>
 
-Another blue button should appear to click: *Open Browser*.
+**<details><summary>Accessibility</summary>**
+</details>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**<details><summary>Testing</summary>**
+* [**_Testing_**](#testing)
+</details>
 
-## Updates Since The Instructional Video
+**<details><summary>Deployment</summary>**
+* [**Deployment**](#deployment)
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**<details><summary>Credits</summary>**
+* [**_Content_**](#content)
+* [**_Acknowledgements_**](#acknowledgements)
+</details>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+---
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# Project Overview
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+---
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### User Stories
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- User Story A: 
+---
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Opportunities arising from user stories
 
---------
+<div align="center">
+ 
+|Opportunities | Importance | Viability / Feasibility
+|-----|:------:|:-----:|
+|**Simple Clean UI** | 5 | 5 |
+|**Clearly indicate purpose** | 5 | 5 |
+|**Clear Simple Instructions** | 5 | 5 |
 
-Happy coding!
+</div>
+
+---
+
+
+#### Design
+
+A standard layout is fully responsive on mobile devices and larger screens.
+
+#### Color Scheme
+
+
+#### Typography
+
+[Google Fonts](https://fonts.google.com/) were used across the site:
+
+##### back to [top](#table-of-contents)
+
+---
+
+# Features
+
+## Existing Features
+
+### Elements on every page
+#### Navbar
+- The navigation bar features...
+
+#### Footer
+
+The footer features:
+
+
+
+##### back to [top](#table-of-contents)
+
+# Technologies Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used throughout the site
+- [CSS (Cascading Style Sheets)](https://www.w3.org/Style/CSS/Overview.en.html) - Used throughout the site.
+
+### Libraries
+
+
+---
+
+# Accessibility
+  
+# Testing
+
+# Deployment
+
+
+---
+
+# Credits
+
+### Content
+
+1.  Google Fonts for font styles; https://fonts.google.com/
+
+ 
+
+### Acknowledgements
+
+1.  
+
+---
+
+This project is for educational use only
+
+##### back to [top](#table-of-contents)
