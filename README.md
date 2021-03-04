@@ -1,6 +1,6 @@
 # Ask Paddy
 
-### [Live Site](https:)
+### [Live Site](https://sean-mc-mahon.github.io/ask_paddy/)
 
 ### [GitHub](https://github.com/Sean-Mc-Mahon/ask-paddy)
 

@@ -15,3 +15,11 @@ checkBox.addEventListener('change', function() {
         window.localStorage.setItem("data-theme", "white");
     }
 })
+
+//IMAGE SWAP
+//on mouse enter paddy winks
+$('#paddy').on('mouseenter', () => {
+    $('#paddy').attr('src', 'static/images/paddy-wink.png');
+}).on('mouseleave', () => {
+    $('#paddy').attr('src', 'static/images/paddy.png');
+});
