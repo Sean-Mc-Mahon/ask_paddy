@@ -25,6 +25,24 @@
     <div class="container">
         <img id="paddy" src="./static/images/paddy.png" alt="paddy">
     </div>
+    <div class="container">
+        <div class="row">
+            <h1 class="p-2">Ask St.Paddy a question!</h1>
+        </div>
+        <div class="row">
+            <form action="./form.py" id="question_form">
+                <div class="row">
+                    <input class="p-1 m-1" type="text" placeholder="Name" id="name" name="name" maxlength="20" required>
+                    <input class="p-1 m-1" type="email" placeholder="Email" id="email" name="email" maxlength="30" required>
+                    <textarea class="p-1 m-1" placeholder="Type your question for St.Paddy..." id="question" name="question" maxlength="500" required></textarea>
+                </div>
+                <div class="row">
+                    <input class="p-2 m-2" type="submit" value="ASK!" formmethod="post">
+                    <input class="p-2 m-2" type="reset">
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+// set 1rem equal to 10px
+html {
+    font-size: 62.5%;
+}
+
 /*green/white mode color themes*/
 html[data-theme="white"] {
   --bg: #ffffff;
@@ -81,4 +86,24 @@ input:checked + label:after {
 
 label:active:after {
   width: 45px;
+}
+
+form{
+    #name,
+    #email {
+        min-width: 9rem;
+        max-width: 30rem;
+        max-height: 3rem;
+    }
+    #question {
+        min-width: 30rem;
+        max-width: 60rem;
+        min-height: 5rem;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        min-width: 4rem;
+        max-width: 10rem;
+    }
+
 }
