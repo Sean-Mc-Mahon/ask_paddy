@@ -15,6 +15,7 @@
     <title>Ask Paddy</title>
 </head>
 <body>
+    <!--GREEN THEME TOGGLE-->
     <div class="toggle-container">
         <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
     </div>
@@ -22,8 +23,28 @@
         <h1>Green/White Mode</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, inventore quos facere ex unde minima. Animi laborum ut quod, quo, beatae repudiandae commodi sed dolorum tenetur incidunt iste enim consequatur optio. Itaque iusto, expedita dolore consequatur ipsa vel reprehenderit nemo, distinctio aliquid dicta libero officia mollitia neque reiciendis aperiam asperiores?</p>
     </div>
+    <!--WINKING PADDY-->
     <div class="container">
         <img id="paddy" src="./static/images/paddy.png" alt="paddy">
+    </div>
+    <!--QUESTION SUBMISSION FORM-->
+    <div class="container">
+        <div class="row">
+            <h1 class="p-2">Ask St.Paddy a question!</h1>
+        </div>
+        <div class="row">
+            <form action="./form.py" id="question_form">
+                <div class="row">
+                    <input class="p-1 m-1" type="text" placeholder="Name" id="name" name="name" maxlength="20" required>
+                    <input class="p-1 m-1" type="email" placeholder="Email" id="email" name="email" maxlength="30" required>
+                    <textarea class="p-1 m-1" placeholder="Type your question for St.Paddy..." id="question" name="question" maxlength="500" required></textarea>
+                </div>
+                <div class="row">
+                    <input class="p-2 m-2" type="submit" value="ASK!" formmethod="post">
+                    <input class="p-2 m-2" type="reset">
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- JQUERY -->

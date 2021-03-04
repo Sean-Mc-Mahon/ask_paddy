@@ -5,16 +5,19 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /*green/white mode color themes*/
-html[data-theme="white"] {
+html[data-theme=white] {
   --bg: #ffffff;
   --panel-bg: #e2e2e2;
   --text: #343a40;
   --header: #047417;
 }
 
-
-html[data-theme="green"] {
+html[data-theme=green] {
   --bg: #047417;
   --panel-bg: #095a16;
   --text: #ffffff;
@@ -22,28 +25,27 @@ html[data-theme="green"] {
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    background-color: var(--panel-bg);
-    margin: 5rem;
-    padding: 5rem;
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: column;
+  background-color: var(--panel-bg);
+  margin: 5rem;
+  padding: 5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Marcellus', serif;
-    color: var(--header);
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Marcellus", serif;
+  color: var(--header);
 }
 
 /*GREEN TOGGLE*/
-input[type="checkbox"] {
+input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -82,3 +84,20 @@ input:checked + label:after {
 label:active:after {
   width: 45px;
 }
+
+form #name,
+form #email {
+  min-width: 9rem;
+  max-width: 30rem;
+  max-height: 3rem;
+}
+form #question {
+  min-width: 30rem;
+  max-width: 60rem;
+  min-height: 5rem;
+}
+form input[type=submit],
+form input[type=reset] {
+  min-width: 4rem;
+  max-width: 10rem;
+}/*# sourceMappingURL=style.css.map */
