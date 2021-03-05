@@ -15,13 +15,13 @@ html[data-theme="white"] {
   --bg: #ffffff;
   --panel-bg: #e2e2e2;
   --text: #343a40;
-  --header: #047417;
+  --header: #449D2E;
 }
 
 
 html[data-theme="green"] {
-  --bg: #047417;
-  --panel-bg: #095a16;
+  --bg: #449D2E;
+  --panel-bg: #105300;
   --text: #ffffff;
   --header: #ffffff;
 }
@@ -108,6 +108,14 @@ input:checked + label:after {
 
 label:active:after {
   width: 45px;
+}
+
+/*WINKING PADDY*/
+.paddy {
+    max-width: 500px;
+}
+#paddy {
+  max-width: 500px;
 }
 
 /*FORM*/
