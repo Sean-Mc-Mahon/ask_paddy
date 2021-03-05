@@ -15,6 +15,7 @@ html[data-theme=white] {
   --panel-bg: #e2e2e2;
   --text: #343a40;
   --header: #449D2E;
+  --btn: #449D2E;
 }
 
 html[data-theme=green] {
@@ -22,6 +23,7 @@ html[data-theme=green] {
   --panel-bg: #105300;
   --text: #ffffff;
   --header: #ffffff;
+  --btn: #ffffff;
 }
 
 body {
@@ -67,8 +69,89 @@ h4 {
 }
 
 /*Paragraphs*/
-p, a {
+p, a, .btn, div {
   font-size: 1.5rem;
+}
+
+/*Buttons*/
+:root {
+    --hue-neutral: #ffffff;
+    --hue-wrong: red;
+    --hue-correct: #449D2E;
+}
+.btn {
+    border: 2px solid var(--btn);
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #343a40;
+    margin: 0.5rem;
+}
+
+/*QUIZ*/
+#q {
+    --hue: var(--hue-neutral);
+    background-color: var(--hue);
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    color: #343a40;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+}
+#q.correct {
+    --hue: var(--hue-correct);
+    color: #343a40;
+}
+#q.wrong {
+    --hue: var(--hue-wrong);
+    color: #ffffff;
+}
+.quiz {
+    display: flex;
+    justify-content: center;
+}
+.btn-grid {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.btn-grid button {
+    padding: 1rem 0;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls button {
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#answer-buttons .btn:hover,
+ .controls .btn:hover{
+    border-color: black;
+}
+#answer-buttons .btn.correct{
+    --hue: var(--hue-correct);
+    background-color: var(--hue);
+    color: #343a40;
+    font-weight: bolder;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+#answer-buttons .btn.wrong{
+    --hue: var(--hue-wrong);
+    background-color: var(--hue);
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
 }
 
 /*GREEN TOGGLE*/
