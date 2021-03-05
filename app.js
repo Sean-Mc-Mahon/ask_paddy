@@ -1,3 +1,5 @@
+//QUIZ
+//code modified from tutorial by web simplified: https://youtu.be/riDzcEQbX6k
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -94,6 +96,33 @@ const questions = [
             {text: "His Birthday", correct: false},
             {text: "The day he died", correct: true},
             {text: "Chased out the snakes", correct: false}
+        ]
+    },
+    {
+        question: "What Patrick banish from Ireland?",
+        answers: [
+            {text: "Sunshine", correct: false},
+            {text: "Python Developers", correct: false},
+            {text: "Snakes", correct: true},
+            {text: "Alchohol free beer", correct: false}
+        ]
+    },
+    {
+        question: "Where was Patrick Born?",
+        answers: [
+            {text: "Cork", correct: false},
+            {text: "Dublin", correct: false},
+            {text: "Scotland", correct: false},
+            {text: "Wales", correct: true}
+        ]
+    },
+    {
+        question: "What plant  is associated with Patrick?",
+        answers: [
+            {text: "Shamrock", correct: true},
+            {text: "Marijuana", correct: false},
+            {text: "Parsley", correct: false},
+            {text: "Moss", correct: false}
         ]
     }
 ]
