@@ -37,8 +37,8 @@ body {
   margin: 5rem;
   padding: 5rem;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 90%;
 }
 
 /*FONT RULES*/
@@ -165,6 +165,7 @@ p, a, .btn, div {
     padding: 2rem;
     font-weight: bold;
     font-size: 2rem;
+    min-width: 100px;
 }
 #answer-buttons .btn:hover,
  .controls .btn:hover{
@@ -232,11 +233,12 @@ label:active:after {
 
 /*WINKING PADDY*/
 .paddy {
-  max-width: 500px;
+    display: flex;
+  justify-content: center;
 }
 
 #paddy {
-  max-width: 500px;
+  max-width: 90%;
 }
 
 /*FORM*/
