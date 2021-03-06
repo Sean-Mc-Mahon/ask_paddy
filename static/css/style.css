@@ -75,38 +75,32 @@ p, a, .btn, div {
 
 /* navigation bar */
 
-.navbar1 {
-    width: 100%;
+#menu {
     background-color: gold;
-    margin: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem; 
+    margin-top: 0;
+    border-radius: 0 0 15px 15px ;
 }
 
-.navbar1 ul {
+#menu ul {
     list-style-type: none;
 }
 
-.navbar1 li {
+#menu li {
    float: left;
-   margin-right: 20px;
+   margin-right: 5%;
 }
 
-.navbar1 a {
+#menu a {
    text-decoration: none;
    color: #8a4311;
    font-weight: 600;
 }
 
-.navbar1 a:hover{
+#menu a:hover{
   border-bottom: 1px solid #8a4311;
 }
 
-.navbar1 .toggle-container {
-    position: absolute;
-    padding: 10px;
-    right: 0;
-    top: 0;
-}
 
 /*Buttons*/
 :root {
@@ -257,4 +251,7 @@ form input[type=submit],
 form input[type=reset] {
   min-width: 4rem;
   max-width: 10rem;
+}
+.hide {
+    display: none;
 }
