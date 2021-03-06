@@ -162,7 +162,18 @@ $('#question-form').on("submit", function(event) {
     emailjs.sendForm('service_6g5vxgc', 'ask_paddy_user_question', this)
         .then(() => {
             console.log("Your question was sent to St. Paddy!");
+            showFormFeedback(true);
         }, (error) => {
-            console.log("There was an error sending your question...", error);
+            console.log("Form error", error);
+            showFormFeedback(false);
         });
 });
+
+function showFormFeedback(status) {
+    $('#form-feedback').removeClass('hide');
+    if (status) {
+        $('#form-feedback').text('Your question was sent to St. Paddy. Check your email for his response!');
+    } else {
+        $('#form-feedback').text('There was an error sending your question...');
+    }
+}

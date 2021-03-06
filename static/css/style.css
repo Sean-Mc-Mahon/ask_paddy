@@ -221,3 +221,6 @@ form input[type=reset] {
   min-width: 4rem;
   max-width: 10rem;
 }
+.hide {
+    display: none;
+}
