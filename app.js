@@ -153,4 +153,16 @@ $('#paddy').on('mouseenter', () => {
     $('#paddy').attr('src', 'static/images/paddy.png');
 });
 
-
+//EMAILJS
+// event listener for question form submit
+// code taken from EmailJS:https://www.emailjs.com/docs/tutorial/creating-contact-form/
+$('#question-form').on("submit", function(event) {
+    event.preventDefault();
+    emailjs.init("user_hIul4Q1zfUcV40B5CbAFE");
+    emailjs.sendForm('service_6g5vxgc', 'ask_paddy_user_question', this)
+        .then(() => {
+            console.log("Your question was sent to St. Paddy!");
+        }, (error) => {
+            console.log("There was an error sending your question...", error);
+        });
+});
