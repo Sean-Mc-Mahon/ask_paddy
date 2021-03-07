@@ -363,6 +363,45 @@ form .btn{
     display: flex;
 }
 
+footer {
+  background-color: gold;
+  color: #ffffff;
+  height: 100px;
+  padding: 5px;
+}
+
+.social-links,
+.list-inline {
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+}
+
+.social-links li a i {
+  width: 48px;
+  height: 48px;
+  padding: 15px 0px;
+  border-radius: 50%;
+  font-size: 26px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  background: #449D2E;
+  border: 3px solid #449D2E;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: #fafafa;
+  color: #449D2E;
+}
+
 /*MEDIA STYLES*/
 /*sm*/
 @media (min-width: 768px) {}
