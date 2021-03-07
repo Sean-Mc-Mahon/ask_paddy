@@ -35,15 +35,15 @@ body {
 }
 
 .container {
-    background-color: var(--panel-bg);
+    background-color: var(--bg);
     padding: 2rem;
     border-radius: 15px;
     margin: 2rem auto;
-    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 3px solid var(--header);
 }
 
 .container.full-width{
@@ -52,7 +52,7 @@ body {
 }
 
 .row {
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -205,7 +205,7 @@ p, a, .btn, div {
 }
 #q.correct {
     --hue: var(--hue-correct);
-    color: #343a40;
+    color: #ffffff;
 }
 #q.wrong {
     --hue: var(--hue-wrong);
@@ -245,7 +245,8 @@ p, a, .btn, div {
 #answer-buttons .btn.correct{
     --hue: var(--hue-correct);
     background-color: var(--hue);
-    color: #343a40;
+    border: var(-hue);
+    color: #ffffff;
     font-weight: bolder;
     font-size: 2rem;
     transition: all 0.5s ease-in-out;
@@ -253,6 +254,7 @@ p, a, .btn, div {
 #answer-buttons .btn.wrong{
     --hue: var(--hue-wrong);
     background-color: var(--hue);
+    border: none;
     color: #ffffff;
     transition: all 0.5s ease-in-out;
 }
@@ -360,7 +362,7 @@ form .btn{
 }
 
 footer {
-  background-color: gold;
+  background-color: var(--bg);
   color: #ffffff;
   height: 100px;
   padding: 5px;
@@ -386,7 +388,7 @@ footer {
   text-align: center;
   color: #ffffff;
   background: #449D2E;
-  border: 3px solid #449D2E;
+  border: 3px solid var(--header);
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -404,6 +406,15 @@ footer {
 
 /*md*/
 @media (min-width: 992px) {
+    /*WINKING PADDY*/
+    .paddy {
+    max-width: 1000px;
+    animation: left 2s ease-in-out;
+    }
+
+    #paddy {
+    max-width: 100%;
+    }
     .container {
     padding: 5rem;
 }
