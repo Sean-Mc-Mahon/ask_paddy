@@ -100,6 +100,7 @@ p, a, .btn, div {
 .logo {
     display: flex;
     align-items: center;
+    animation: drop 2s ease-in-out;
 }
 .logo h2 {
     font-size: 4.7rem;
@@ -127,6 +128,7 @@ p, a, .btn, div {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    animation: fade 2s ease-in-out;
 }
 
 #menu li {
@@ -148,6 +150,23 @@ p, a, .btn, div {
   border-bottom: 1px solid #8a4311;
 }
 
+@keyframes drop {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 
 /*Buttons*/
 :root {
@@ -182,11 +201,11 @@ p, a, .btn, div {
     justify-self: center;
     justify-content: center;
     color: #343a40;
-    width: 80%;
     margin: 0 auto;
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: bolder;
+    text-align: center;
 }
 #q.correct {
     --hue: var(--hue-correct);
@@ -291,10 +310,34 @@ label:active:after {
 /*WINKING PADDY*/
 .paddy {
     max-width: 560px;
+    animation: left 2s ease-in-out;
 }
 
 #paddy {
   max-width: 90%;
+}
+
+@keyframes left {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/*CONTENT*/
+#content {
+    animation: right 2s ease-in-out;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 
 /*FORM*/
@@ -334,3 +377,4 @@ form .btn{
 /*lg*/
 @media (min-width: 1200px) { 
 }
+

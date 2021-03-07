@@ -33,8 +33,8 @@
                 <div class="links">
                         <ul>
                             <li><a href="#about"> About </a></li>
-                            <li><a href="#tell"> Tell </a></li>
                             <li><a href="#ask"> Ask </a></li>
+                            <li><a href="#tell"> Tell </a></li>
                         </ul>  
                         <div class="toggle-container">
                             <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
@@ -45,21 +45,16 @@
     </header>
 
     <div class="row">
-        <!-- COUNTDOWN -->
-        
-    </div>
-
-    <div class="row">
         <!--WINKING PADDY-->
         <div class="container paddy col-sm-12 col-md-6">
             <img id="paddy" src="./static/images/paddy.png" alt="paddy">
         </div>
         
-        <div class="col-sm-12 col-md-6">
+        <div id="content" class="col-sm-12 col-md-6">
             <!--ABOUT-->
             <div class="container" id="about">
-                <div class="">
                 <!-- Code for countdown clock taken from:https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ -->
+                <span>Nearly there...</span>
                 <div id="clockdiv">
                     <span><h3><span class="days">: </span></h3></span>
                     <span><h3>:<span class="hours">: </span></h3></span>
@@ -69,9 +64,10 @@
                 <div id="countdown-zero-message" class="hide">
                     <span>HAPPY ST. PADDY'S DAY! GRAB A GUINNESS (if you are 18 or older...)</span>
                 </div>
+                <p>Once a year, every March 17th, I descend from heaven to have a Guinness, check my website and respond to some emails. This is your chance to ask me anything you've wanted to know, what was the fastest I ever drank a pint of Guinness? Who's gonna win the all Ireland? What's my opinion on Brexit? <br>
+                Also, why not test your Paddy knowledge by taking my quiz?</p>
             </div>
-                <p>Once a year, every March 17th, Paddy descends from heaven to have a Guinness, check his website and respond to some emails. This is your chance to ask Paddy anything you've wanted to know, what was the fastest he ever drank a pint of Guinness? Who's gonna win the all Ireland? What's his opinion on Brexit? Also, why not let Paddy know how much you now about him by taking his quiz?</p>
-            </div>
+            
             <!--ASK PADDY-->
             <div class="container" id="ask">
                 <div class="row">
@@ -119,7 +115,8 @@
     </div>  
     
     
-
+    <!--Sweet alert used for alerts upon form submission https://sweetalert.js.org/-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

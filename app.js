@@ -77,6 +77,7 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
+    document.getElementById('paddy').setAttribute('src', 'static/images/paddy.png')
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
     const button = document.createElement('button')
@@ -114,9 +115,11 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct) {
+
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct')
+        document.getElementById('paddy').setAttribute('src', 'static/images/paddy-wink.png')
     } else {
         element.classList.add('wrong')
     }
@@ -129,7 +132,7 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: "When is St.Patrick's Day?",
+        question: "When is my day?",
         answers: [
             {text: "March 17th", correct: true},
             {text: "Smarch 17th", correct: false},
@@ -138,16 +141,16 @@ const questions = [
         ]
     },
     {
-        question: "What is the significance of March 17 to Patrick?",
+        question: "What is the significance of March 17 to me?",
         answers: [
-            {text: "His first Guinness", correct: false},
-            {text: "His Birthday", correct: false},
-            {text: "The day he died", correct: true},
-            {text: "Chased out the snakes", correct: false}
+            {text: "My first Guinness", correct: false},
+            {text: "My Birthday", correct: false},
+            {text: "The day I died", correct: true},
+            {text: "When I chased out the snakes", correct: false}
         ]
     },
     {
-        question: "What Patrick banish from Ireland?",
+        question: "What did I banish from Ireland?",
         answers: [
             {text: "Sunshine", correct: false},
             {text: "Python Developers", correct: false},
@@ -156,7 +159,7 @@ const questions = [
         ]
     },
     {
-        question: "Where was Patrick Born?",
+        question: "Where was I Born?",
         answers: [
             {text: "Cork", correct: false},
             {text: "Dublin", correct: false},
@@ -165,7 +168,7 @@ const questions = [
         ]
     },
     {
-        question: "What plant  is associated with Patrick?",
+        question: "What plant am I associated with?",
         answers: [
             {text: "Shamrock", correct: true},
             {text: "Marijuana", correct: false},
@@ -208,22 +211,22 @@ $('#question-form').on("submit", function(event) {
     event.preventDefault();
     emailjs.init("user_hIul4Q1zfUcV40B5CbAFE");
     emailjs.sendForm('service_6g5vxgc', 'ask_paddy_user_question', this)
-        .then(() => {
-            console.log("Your question was sent to St. Paddy!");
-            showFormFeedback(true);
-        }, (error) => {
-            console.log("Form error", error);
-            showFormFeedback(false);
+        .then(
+      function response (response) {
+          swal({
+      title: "Your email has been sent!",
+      text: "Before going to bed on St.Patrick's day, have a shot of whiskey, throw a potato over your left shoulder and say 2 Hail Mary's, I'll come to you in a dream and answer your question...",
+      icon: "success",
+      button: "All Done",
+    });
+      },
+      function (error) {
+        swal({
+          title: "Sorry, that message didn't send",
+          text: "Please try again",
+          icon: "error",
+          button: "OK",
         });
-});
-
-function showFormFeedback(status) {
-    $('#form-feedback').removeClass('hide');
-    if (status) {
-        $('#form-feedback').text("Before going to bed on St.Patrick's day, have a shot of whiskey, throw a potato over your left shoulder and say 2 Hail Mary's, Patrick will come to you in a dream and answer your question...");
-    } else {
-        $('#form-feedback').text('There was an error sending your question...');
-    }
-}
-
+      }
+    )})
 
