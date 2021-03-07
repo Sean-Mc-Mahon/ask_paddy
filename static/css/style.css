@@ -111,10 +111,6 @@ p, a, .btn, div {
 .links {
     display: flex;
 }
-#hat {
-    width: 50px;
-    height: 50px;
-}
 
 #menu {
     background-color: gold;
