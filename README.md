@@ -110,8 +110,15 @@ The footer features:
 
 # Technologies Used
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used throughout the site
-- [CSS (Cascading Style Sheets)](https://www.w3.org/Style/CSS/Overview.en.html) - Used throughout the site.
+#### 1. Languages
+
+![HTML5](static/images/HTML5.png) [HTML 5](https://en.wikipedia.org/wiki/HTML5)
+
+![CSS3](static/images/CSS3.png) [CSS 3](https://en.wikipedia.org/wiki/CSS)
+
+![JavaScript](static/images/Java.png) [Java Script](https://en.wikipedia.org/wiki/JavaScript)
+
+#### 2.Integration
 
 ### Libraries
 
