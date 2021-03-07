@@ -20,9 +20,9 @@
 
 <body>
     <!-- navigation bar -->
-    <div class="container" id="menu">
+    <div class="container full-width" id="menu">
         <div class="row">
-            <div class="col-10">
+            <div class="col-8">
                 <nav id="home">
                     <ul>
                         <li><a href="#home"> Home </a></li>
@@ -32,7 +32,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-2 toggle-container">
+            <div class="col-4 toggle-container">
                 <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
             </div>
         </div>
@@ -75,16 +75,15 @@
         <div class="row">
             <form id="question-form">
                 <div class="row">
-                    <input class="p-1 m-1" type="text" placeholder="Name" id="name" name="user_name" maxlength="20"
-                        required>
-                    <input class="p-1 m-1" type="email" placeholder="Email" id="email" name="user_email" maxlength="30"
-                        required>
-                    <textarea class="p-1 m-1" placeholder="Type your question for St.Paddy..." id="question"
-                        name="question" maxlength="500" required></textarea>
+                    <input class="p-2 m-2 col-12 col-md-6 form-control" type="text" placeholder="Name" id="name" name="user_name" maxlength="20" aria-label="Input name" required>
+                    <input class="p-2 m-2 col-12 col-md-6 form-control" type="email" placeholder="Email" id="email" name="user_email" maxlength="30" aria-label="Input email" required>
                 </div>
                 <div class="row">
-                    <input class="p-2 m-2" type="submit" value="ASK!">
-                    <input class="p-2 m-2" type="reset">
+                    <textarea class="p-2 m-2 col-12 form-control" placeholder="Type your question for St.Paddy..." id="question" name="question" maxlength="500" aria-label="Input message" required></textarea>
+                </div>
+                <div class="row">
+                    <input class="btn btn-success btn-lg" type="submit" value="ASK!" aria-label="Send message">
+                    <input class="btn btn-secondary" type="reset">
                 </div>
                 <div class="row">
                     <span id="form-feedback" class="hide col"></span>
