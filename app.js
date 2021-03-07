@@ -1,3 +1,51 @@
+//COUNTDOWN
+//code modified from sitepoint article: https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/  
+const deadline = "2021-03-17T00:00:00Z" //ISO 8601 format
+
+function getTimeRemaining(end) {
+    const total = Date.parse(end) - Date.parse(new Date()); // calculates difference in milliseconds
+    const seconds = Math.floor((total/1000) % 60); 
+    const minutes = Math.floor((total/(1000*60)) % 60);
+    const hours = Math.floor((total/(1000*60*60)) % 24);
+    const days = Math.floor((total/(1000*60*60*24)) % 60);
+
+    return {
+        total,
+        days,
+        hours,
+        minutes,
+        seconds
+    };
+}
+
+function initializeClock(end) {
+
+    function zeroPadClock(num) {
+        const numString = num.toString();
+        return ('0' + numString).slice(-2); 
+    }
+
+    function updateClock() {
+        const t = getTimeRemaining(end); 
+        $('.days').text(zeroPadClock(t.days));
+        $('.hours').text(zeroPadClock(t.hours));
+        $('.minutes').text(zeroPadClock(t.minutes));
+        $('.seconds').text(zeroPadClock(t.seconds));
+
+        if (t.total <= 0) {
+            $('#countdown-zero-message').removeClass('hide');
+            $('#clockdiv').addClass('hide');
+            clearInterval(timeInterval);
+        }
+    }
+
+    updateClock(); // avoid initial 1000ms delay
+    var timeInterval = setInterval(updateClock, 1000);
+}
+
+initializeClock(deadline);
+
+
 //QUIZ
 //code modified from tutorial by web simplified: https://youtu.be/riDzcEQbX6k
 const startButton = document.getElementById('start-btn')
@@ -177,3 +225,5 @@ function showFormFeedback(status) {
         $('#form-feedback').text('There was an error sending your question...');
     }
 }
+
+
