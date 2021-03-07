@@ -127,7 +127,7 @@ const questions = [
     }
 ]
 
-//DARK MODE
+//GREEN THEME
 var checkBox = document.getElementById("switch");
 var theme = window.localStorage.getItem("data-theme");
 
@@ -172,7 +172,7 @@ $('#question-form').on("submit", function(event) {
 function showFormFeedback(status) {
     $('#form-feedback').removeClass('hide');
     if (status) {
-        $('#form-feedback').text('Your question was sent to St. Paddy. Check your email for his response!');
+        $('#form-feedback').text("Before going to bed on St.Patrick's day, have a shot of whiskey, throw a potato over your left shoulder and say 2 Hail Mary's, Patrick will come to you in a dream and answer your question...");
     } else {
         $('#form-feedback').text('There was an error sending your question...');
     }

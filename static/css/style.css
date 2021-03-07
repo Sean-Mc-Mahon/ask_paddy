@@ -51,6 +51,11 @@ body {
     max-width: 100%;
 }
 
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 /*FONT RULES*/
 /*Headers*/
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +130,17 @@ p, a, .btn, div {
     background-color: #ffffff;
     color: #343a40;
     margin: 0.5rem;
+}
+
+.container-box {
+    margin: 5rem;
+    padding: 5rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*QUIZ*/
@@ -239,12 +255,11 @@ label:active:after {
 
 /*WINKING PADDY*/
 .paddy {
-    display: flex;
-  justify-content: center;
+    max-width: 560px;
 }
 
 #paddy {
-  max-width: 90%;
+  max-width: 400px;
 }
 
 /*FORM*/
@@ -264,4 +279,20 @@ form .btn{
 
 .hide {
     display: none;
+}
+
+/*MEDIA STYLES*/
+/*sm*/
+@media (min-width: 768px) {}
+
+/*md*/
+@media (min-width: 992px) {
+    .quiz {
+    height: 500px;
+    }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+    
 }

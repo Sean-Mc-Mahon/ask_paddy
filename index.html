@@ -19,52 +19,61 @@
 </head>
 
 <body>
-    <!-- navigation bar -->
-    <div class="container-fluid full-width" id="menu">
-        <div class="row">
-            <div class="col-8">
-                <nav id="home">
-                    <ul>
-                        <li><a href="#about"> About </a></li>
-                        <li><a href="#tell"> Tell </a></li>
-                        <li><a href="#ask"> Ask </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-4 toggle-container">
-                <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="about">
-        <h1>About</h1>
-        <p>Once a year, every March 17th, Paddy descends from heaven to have a Guinness, check his website and respond to some emails. This is your chance to ask Paddy anything you've wanted to know, what was the fastest he ever drank a pint of Guinness? Who's gonna win the all Ireland? What's his opinion on Brexit? Also why not let Paddy know how much you now about him by taking his quiz?</p>
-    </div>
-    <!--QUIZ-->
-    <div class="container quiz" id="tell">
-        <h2>Tell Paddy</h2>
-        <div id="question-container" class="hide">
+    <header>
+        <!-- navigation bar -->
+        <div class="container-fluid full-width" id="menu">
             <div class="row">
-                <div class="col-sm-12" id="q">Question</div>
-            </div>
-            <div id="answer-buttons" class="btn-grid row">
-                <button class="btn col-sm-12 col-md-5">Answer 1</button>
-                <button class="btn col-sm-12 col-md-5">Answer 2</button>
-                <button class="btn col-sm-12 col-md-5">Answer 3</button>
-                <button class="btn col-sm-12 col-md-5">Answer 4</button>
+                <div class="col-8">
+                    <nav id="home">
+                        <ul>
+                            <li><a href="#about"> About </a></li>
+                            <li><a href="#tell"> Tell </a></li>
+                            <li><a href="#ask"> Ask </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-4 toggle-container">
+                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                </div>
             </div>
         </div>
-        <div class="controls row">
-            <button id="start-btn" class="start-btn btn col-sm-12 col-md-3">Quiz</button>
-            <button id="next-btn" class="next-btn btn hide col-sm-12 col-md-3">Next</button>
-        </div>
-    </div>
-    <div class="container paddy">
-        <img id="paddy" src="./static/images/paddy.png" alt="paddy">
-    </div>
-    <!--WINKING PADDY-->
-    <!--QUESTION SUBMISSION FORM-->
+    </header>
+
+    
+        <div class="row">
+            <!--WINKING PADDY-->
+            <div class="container paddy col-sm-12 col-md-6">
+                <img id="paddy" src="./static/images/paddy.png" alt="paddy">
+            </div>
+            <!--ABOUT-->
+            <div class="col-sm-12 col-md-6">
+                <div class="container" id="about">
+                    <h1>About</h1>
+                    <p>Once a year, every March 17th, Paddy descends from heaven to have a Guinness, check his website and respond to some emails. This is your chance to ask Paddy anything you've wanted to know, what was the fastest he ever drank a pint of Guinness? Who's gonna win the all Ireland? What's his opinion on Brexit? Also, why not let Paddy know how much you now about him by taking his quiz?</p>
+                </div>
+                <!--TELL PADDY-->
+                <div class="container quiz" id="tell">
+                    <h2>Tell Paddy</h2>
+                    <div id="question-container" class="hide">
+                        <div class="row">
+                            <div class="col-sm-12" id="q">Question</div>
+                        </div>
+                        <div id="answer-buttons" class="btn-grid row">
+                            <button class="btn col-sm-12 col-md-5">Answer 1</button>
+                            <button class="btn col-sm-12 col-md-5">Answer 2</button>
+                            <button class="btn col-sm-12 col-md-5">Answer 3</button>
+                            <button class="btn col-sm-12 col-md-5">Answer 4</button>
+                        </div>
+                    </div>
+                    <div class="controls row">
+                        <button id="start-btn" class="start-btn btn col-sm-12 col-md-3">Quiz</button>
+                        <button id="next-btn" class="next-btn btn hide col-sm-12 col-md-3">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    
+    <!--ASK PADDY-->
     <div class="container" id="ask">
         <div class="row">
             <h2 class="p-2">Ask Paddy</h2>
