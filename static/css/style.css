@@ -23,7 +23,7 @@ html[data-theme=green] {
   --panel-bg: #105300;
   --text: #ffffff;
   --header: #ffffff;
-  --btn: #ffffff;
+  --btn: gold;
 }
 
 body {
@@ -39,6 +39,11 @@ body {
   border-radius: 15px;
   margin: 2rem auto;
   max-width: 90%;
+}
+
+.container.full-width{
+    width: 100%;
+    max-width: 100%;
 }
 
 /*FONT RULES*/
@@ -110,7 +115,7 @@ p, a, .btn, div {
 }
 .btn {
     border: 2px solid var(--btn);
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     background-color: #ffffff;
     color: #343a40;
     margin: 0.5rem;
@@ -236,22 +241,20 @@ label:active:after {
 }
 
 /*FORM*/
+form .form-control{
+    font-size: 1.2rem;
+}
 form #name,
 form #email {
-  min-width: 9rem;
   max-width: 30rem;
-  max-height: 3rem;
 }
 form #question {
-  min-width: 30rem;
-  max-width: 60rem;
-  min-height: 5rem;
+  min-height: 8rem;
 }
-form input[type=submit],
-form input[type=reset] {
-  min-width: 4rem;
-  max-width: 10rem;
+form .btn{
+    width: auto;
 }
+
 .hide {
     display: none;
 }
