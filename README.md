@@ -81,6 +81,8 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Color Scheme
 
+![Color Palette](static/images/rgb-readme-1.png)
+
 
 #### Typography
 
