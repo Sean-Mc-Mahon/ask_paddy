@@ -86,7 +86,9 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Typography
 
-[Google Fonts](https://fonts.google.com/) were used across the site:
+We choose [Marcellus](https://fonts.google.com/specimen/Marcellus?preview.text_type=custom#standard-styles) because it has a Celtic feel <br />
+and [Poppins](https://fonts.google.com/specimen/Poppins?preview.text_type=custom) for the body because it is very easy to read.
+
 
 ##### back to [top](#table-of-contents)
 
@@ -120,7 +122,24 @@ The footer features:
 
 #### 2.Integration
 
-### Libraries
+![BOOTSTRAP](static/images/BOOTSTRAP.png) [Bootstrap](https://getbootstrap.com/)
+
+![GOOGLEFONTS](static/images/GOOGLE-FONTS.png) [Google Fonts](https://fonts.google.com/)
+
+[EMAILJS](https://www.emailjs.com/)
+
+#### 3. Workspace, version control and Repository storage
+
+![GIT](static/images/GIT.png) [GIT](https://git-scm.com/)
+
+![GITHUB](static/images/GITHUB.png) [GITHUB](https://github.com/) 
+
+# Resources
+
+[Code Institute](https://codeinstitute.net/) Course Content <br />
+Code Institute SLACK Community <br />
+[Youtube](https://www.youtube.com/) - General resource. <br />
+[Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
 
 
 ---
@@ -128,6 +147,7 @@ The footer features:
 # Accessibility
   
 # Testing
+
 
 # Deployment
 
@@ -139,6 +159,8 @@ The footer features:
 ### Content
 
 1.  Google Fonts for font styles; https://fonts.google.com/
+
+
 
  
 
