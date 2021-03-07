@@ -92,6 +92,29 @@ p, a, .btn, div {
 
 /* navigation bar */
 
+.logo-and-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h2 {
+    font-size: 4.7rem;
+    letter-spacing: 3px;
+    margin: 0;
+    color: #8a4311;
+}
+.links {
+    display: flex;
+}
+#hat {
+    width: 50px;
+    height: 50px;
+}
+
 #menu {
     background-color: gold;
     padding: 2rem 1rem; 
@@ -99,18 +122,26 @@ p, a, .btn, div {
 }
 
 #menu ul {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 
 #menu li {
-   float: left;
-   margin-right: 5%;
+   margin: 2px 5px;
+  padding: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2rem;
 }
 
 #menu a {
    text-decoration: none;
    color: #8a4311;
    font-weight: 600;
+  font-size: 2rem;
 }
 
 #menu a:hover{
