@@ -41,19 +41,7 @@
 
     <div class="row">
         <!-- COUNTDOWN -->
-        <div class="container full-width">
-            <h1>Celebrate St.Paddy!</h1>
-            <!-- Code for countdown clock taken from:https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ -->
-            <div id="clockdiv">
-                <span>Days: <span class="days"></span></span>
-                <span> Hours: <span class="hours"></span></span>
-                <span> Minutes: <span class="minutes"></span></span>
-                <span> Seconds: <span class="seconds"></span></span>
-            </div>
-            <div id="countdown-zero-message" class="hide">
-                <span>HAPPY ST. PADDY'S DAY! GRAB A GUINNESS (if you are 18 or older...)</span>
-            </div>
-        </div>
+        
     </div>
 
     <div class="row">
@@ -61,11 +49,47 @@
         <div class="container paddy col-sm-12 col-md-6">
             <img id="paddy" src="./static/images/paddy.png" alt="paddy">
         </div>
-        <!--ABOUT-->
+        
         <div class="col-sm-12 col-md-6">
+            <!--ABOUT-->
             <div class="container" id="about">
-                <h1>About</h1>
+                <div class="">
+                <!-- Code for countdown clock taken from:https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ -->
+                <div id="clockdiv">
+                    <span><h3><span class="days">: </span></h3></span>
+                    <span><h3>:<span class="hours">: </span></h3></span>
+                    <span><h3>:<span class="minutes">: </span></h3></span>
+                    <span><h3>:<span class="seconds"></span></h3></span>
+                </div>
+                <div id="countdown-zero-message" class="hide">
+                    <span>HAPPY ST. PADDY'S DAY! GRAB A GUINNESS (if you are 18 or older...)</span>
+                </div>
+            </div>
                 <p>Once a year, every March 17th, Paddy descends from heaven to have a Guinness, check his website and respond to some emails. This is your chance to ask Paddy anything you've wanted to know, what was the fastest he ever drank a pint of Guinness? Who's gonna win the all Ireland? What's his opinion on Brexit? Also, why not let Paddy know how much you now about him by taking his quiz?</p>
+            </div>
+            <!--ASK PADDY-->
+            <div class="container" id="ask">
+                <div class="row">
+                    <h2 class="p-2">Ask Paddy</h2>
+                </div>
+                <div class="row">
+                    <form id="question-form">
+                        <div class="row">
+                            <input class="p-2 m-2 col-12 col-md-6 form-control" type="text" placeholder="Name" id="name" name="user_name" maxlength="20" aria-label="Input name" required>
+                            <input class="p-2 m-2 col-12 col-md-6 form-control" type="email" placeholder="Email" id="email" name="user_email" maxlength="30" aria-label="Input email" required>
+                        </div>
+                        <div class="row">
+                            <textarea class="p-2 m-2 col-12 form-control" placeholder="Type your question for St.Paddy..." id="question" name="question" maxlength="500" aria-label="Input message" required></textarea>
+                        </div>
+                        <div class="row">
+                            <input class="btn btn-success btn-lg" type="submit" value="ASK!" aria-label="Send message">
+                            <input class="btn btn-secondary" type="reset">
+                        </div>
+                        <div class="row">
+                            <span id="form-feedback" class="hide col"></span>
+                        </div>
+                    </form>
+                </div>
             </div>
             <!--TELL PADDY-->
             <div class="container quiz" id="tell">
@@ -89,30 +113,7 @@
         </div>
     </div>  
     
-    <!--ASK PADDY-->
-    <div class="container" id="ask">
-        <div class="row">
-            <h2 class="p-2">Ask Paddy</h2>
-        </div>
-        <div class="row">
-            <form id="question-form">
-                <div class="row">
-                    <input class="p-2 m-2 col-12 col-md-6 form-control" type="text" placeholder="Name" id="name" name="user_name" maxlength="20" aria-label="Input name" required>
-                    <input class="p-2 m-2 col-12 col-md-6 form-control" type="email" placeholder="Email" id="email" name="user_email" maxlength="30" aria-label="Input email" required>
-                </div>
-                <div class="row">
-                    <textarea class="p-2 m-2 col-12 form-control" placeholder="Type your question for St.Paddy..." id="question" name="question" maxlength="500" aria-label="Input message" required></textarea>
-                </div>
-                <div class="row">
-                    <input class="btn btn-success btn-lg" type="submit" value="ASK!" aria-label="Send message">
-                    <input class="btn btn-secondary" type="reset">
-                </div>
-                <div class="row">
-                    <span id="form-feedback" class="hide col"></span>
-                </div>
-            </form>
-        </div>
-    </div>
+    
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"

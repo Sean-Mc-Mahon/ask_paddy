@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: justify;
+  /* border: 1px solid pink; */
 }
 
 html {
@@ -35,8 +36,7 @@ body {
 
 .container {
     background-color: var(--panel-bg);
-    margin: 5rem;
-    padding: 5rem;
+    padding: 2rem;
     border-radius: 15px;
     margin: 2rem auto;
     max-width: 90%;
@@ -187,7 +187,10 @@ p, a, .btn, div {
     padding: 2rem;
     font-weight: bold;
     font-size: 2rem;
-    min-width: 100px;
+    min-width: 150px;
+}
+#answer-buttons {
+    margin: 0.5rem auto;
 }
 #answer-buttons .btn:hover,
  .controls .btn:hover{
@@ -211,6 +214,7 @@ p, a, .btn, div {
 .hide {
     display: none;
 }
+
 
 /*GREEN TOGGLE*/
 input[type=checkbox] {
@@ -259,7 +263,7 @@ label:active:after {
 }
 
 #paddy {
-  max-width: 400px;
+  max-width: 90%;
 }
 
 /*FORM*/
@@ -281,18 +285,21 @@ form .btn{
     display: none;
 }
 
+#clockdiv {
+    display: flex;
+}
+
 /*MEDIA STYLES*/
 /*sm*/
 @media (min-width: 768px) {}
 
 /*md*/
 @media (min-width: 992px) {
-    .quiz {
-    height: 500px;
-    }
+    .container {
+    padding: 5rem;
+}
 }
 
 /*lg*/
-@media (min-width: 1200px) {
-    
+@media (min-width: 1200px) { 
 }
