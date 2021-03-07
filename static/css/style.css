@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: justify;
 }
 
 html {
@@ -33,12 +34,16 @@ body {
 }
 
 .container {
-  background-color: var(--panel-bg);
-  margin: 5rem;
-  padding: 5rem;
-  border-radius: 15px;
-  margin: 2rem auto;
-  max-width: 90%;
+    background-color: var(--panel-bg);
+    margin: 5rem;
+    padding: 5rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container.full-width{
@@ -51,6 +56,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Marcellus", serif;
   color: var(--header);
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -84,7 +91,6 @@ p, a, .btn, div {
     background-color: gold;
     padding: 2rem 1rem; 
     margin-top: 0;
-    border-radius: 0 0 15px 15px ;
 }
 
 #menu ul {
@@ -145,6 +151,7 @@ p, a, .btn, div {
 }
 .quiz {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .btn-grid {

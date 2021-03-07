@@ -20,14 +20,13 @@
 
 <body>
     <!-- navigation bar -->
-    <div class="container full-width" id="menu">
+    <div class="container-fluid full-width" id="menu">
         <div class="row">
             <div class="col-8">
                 <nav id="home">
                     <ul>
-                        <li><a href="#home"> Home </a></li>
                         <li><a href="#about"> About </a></li>
-                        <li><a href="#quiz"> Quiz </a></li>
+                        <li><a href="#tell"> Tell </a></li>
                         <li><a href="#ask"> Ask </a></li>
                     </ul>
                 </nav>
@@ -39,14 +38,12 @@
     </div>
 
     <div class="container" id="about">
-        <h1>Green / White Mode</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, inventore quos facere ex unde minima.
-            Animi laborum ut quod, quo, beatae repudiandae commodi sed dolorum tenetur incidunt iste enim consequatur
-            optio. Itaque iusto, expedita dolore consequatur ipsa vel reprehenderit nemo, distinctio aliquid dicta
-            libero officia mollitia neque reiciendis aperiam asperiores?</p>
+        <h1>About</h1>
+        <p>Once a year, every March 17th, Paddy descends from heaven to have a Guinness, check his website and respond to some emails. This is your chance to ask Paddy anything you've wanted to know, what was the fastest he ever drank a pint of Guinness? Who's gonna win the all Ireland? What's his opinion on Brexit? Also why not let Paddy know how much you now about him by taking his quiz?</p>
     </div>
     <!--QUIZ-->
-    <div class="container quiz" id="quiz">
+    <div class="container quiz" id="tell">
+        <h2>Tell Paddy</h2>
         <div id="question-container" class="hide">
             <div class="row">
                 <div class="col-sm-12" id="q">Question</div>
@@ -59,7 +56,7 @@
             </div>
         </div>
         <div class="controls row">
-            <button id="start-btn" class="start-btn btn col-sm-12 col-md-3">Start</button>
+            <button id="start-btn" class="start-btn btn col-sm-12 col-md-3">Quiz</button>
             <button id="next-btn" class="next-btn btn hide col-sm-12 col-md-3">Next</button>
         </div>
     </div>
@@ -70,7 +67,7 @@
     <!--QUESTION SUBMISSION FORM-->
     <div class="container" id="ask">
         <div class="row">
-            <h1 class="p-2">Ask St.Paddy a question!</h1>
+            <h2 class="p-2">Ask Paddy</h2>
         </div>
         <div class="row">
             <form id="question-form">
