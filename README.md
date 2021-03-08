@@ -33,6 +33,7 @@ Ask Paddy is Team 17's entry for the [Code Institute](https://codeinstitute.net/
 
 **<details><summary>Testing</summary>**
 * [**_Testing_**](#testing)
+* [**_Lighthouse_**](#lighthouse)
 </details>
 
 **<details><summary>Deployment</summary>**
@@ -164,6 +165,12 @@ Code Institute SLACK Community <br />
 - Image of Saint Patrick winks when mouse hover. <br />
 - Question submission form is functional. <br />
 - Background color changegs to white when selected. <br />
+
+#### Lighthouse
+
+Performance, Accessibility, Best Practices & SEO were tested using Google Lighthouse.
+
+![Lighthouse](static/wireframes/ask-paddy-testing.JPG)
 ---
 
 # Deployment
