@@ -103,17 +103,21 @@ p, a, .btn, div {
     animation: drop 2s ease-in-out;
 }
 .logo h2 {
-    font-size: 4.7rem;
+    font-size: 4.5rem;
     letter-spacing: 3px;
     margin: 0;
-    color: #8a4311;
+    color: var(--bg);
 }
+#hat {
+        width: 45px;
+        height: 45px;
+    }
 .links {
     display: flex;
 }
 
 #menu {
-    background-color: gold;
+    background-color:var(--header);
     padding: 2rem 1rem; 
     margin-top: 0;
 }
@@ -137,13 +141,13 @@ p, a, .btn, div {
 
 #menu a {
    text-decoration: none;
-   color: #8a4311;
+   color: var(--bg);
    font-weight: 600;
   font-size: 2rem;
 }
 
 #menu a:hover{
-  border-bottom: 1px solid #8a4311;
+  border-bottom: 2px solid var(--bg);
 }
 
 @keyframes drop {
@@ -276,7 +280,7 @@ label {
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: #343a40;
+  background: #acacac;
   float: right;
   border-radius: 100px;
   position: relative;
@@ -406,6 +410,13 @@ footer {
 
 /*md*/
 @media (min-width: 992px) {
+    .logo h2 {
+    font-size: 6rem;
+    }
+    #hat {
+        width: 60px;
+        height: 60px;
+    }
     /*WINKING PADDY*/
     .paddy {
     max-width: 1000px;
