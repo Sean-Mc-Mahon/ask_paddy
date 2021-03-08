@@ -25,7 +25,7 @@ html[data-theme=green] {
   --panel-bg: #105300;
   --text: #ffffff;
   --header: #ffffff;
-  --btn: gold;
+  --btn: #ffd500;
 }
 
 body {
@@ -345,6 +345,8 @@ label:active:after {
 /*FORM*/
 form .form-control{
     font-size: 1.2rem;
+    border: 2px solid var(--btn);
+    border-radius: 1rem;
 }
 form #name,
 form #email {
@@ -365,6 +367,16 @@ form .btn{
     display: flex;
 }
 
+input textarea {
+    border-radius: 1rem;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+/*FOOTER*/
 footer {
   background-color: var(--bg);
   color: #ffffff;
@@ -405,8 +417,6 @@ footer {
 }
 
 /*MEDIA STYLES*/
-/*sm*/
-@media (min-width: 768px) {}
 
 /*md*/
 @media (min-width: 992px) {
@@ -428,10 +438,6 @@ footer {
     }
     .container {
     padding: 5rem;
-}
-}
-
-/*lg*/
-@media (min-width: 1200px) { 
+    }
 }
 
