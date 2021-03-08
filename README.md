@@ -15,10 +15,10 @@ Ask Paddy is Team 17's entry for the [Code Institute](https://codeinstitute.net/
 </details>
 
 **<details><summary>UX</summary>**
-    * [_Color Scheme_](#color-scheme)
-    * [_Typography_](#typography)
-    * [_Media_](#Media)
-    * [_Wireframes_](#wireframes)
+* [_Color Scheme_](#color-scheme)
+* [_Typography_](#typography)
+* [_Media_](#Media)
+* [_Wireframes_](#wireframes)
 </details>
 
 **<details><summary>Features</summary>**
@@ -29,9 +29,6 @@ Ask Paddy is Team 17's entry for the [Code Institute](https://codeinstitute.net/
 **<details><summary>Technologies Used</summary>**
 * [**_Libraries_**](#libraries)
 * [**_Version Control_**](#version-control)
-</details>
-
-**<details><summary>Accessibility</summary>**
 </details>
 
 **<details><summary>Testing</summary>**
@@ -91,6 +88,18 @@ A standard layout that is fully responsive on mobile devices and larger screens.
 We choose [Marcellus](https://fonts.google.com/specimen/Marcellus?preview.text_type=custom#standard-styles) because it has a Celtic feel <br />
 and [Poppins](https://fonts.google.com/specimen/Poppins?preview.text_type=custom) for the body because it is very easy to read.
 
+#### Media
+
+![AmIResponsive](static/images/paddy-wink.png)
+
+Paddy image was created by the team using [Affinity Designer](https://affinity.serif.com/en-us/)
+
+#### Wireframes
+
+![AmIResponsive](static/wireframes/ask_paddy_wire.jpg)
+
+We made our wireframe with paper and pen as time was a constraint.
+
 
 ##### back to [top](#table-of-contents)
 
@@ -148,8 +157,6 @@ Code Institute SLACK Community <br />
 
 
 ---
-
-# Accessibility
   
 # Testing
 - Tested the Countdown and it works without any problem. <br />
@@ -163,18 +170,18 @@ Code Institute SLACK Community <br />
 
 This project has been deployed on GitHub Pages with the following process:
 
-- Master Repository was created by Sean. <br />
+- Master Repository was created by Sean on Github. <br />
 - All code was written on GitPod, the code was then pushed to GitHub where it is stored in his Repository.<br />
-- Contribuitions were made through Forking and Merging with the Master branch.
+- Contribuitions were made through Forking and Merging team memeber branches with the Master branch.
 ---
 
 # Credits
 
 ### Content
 
-1. [Quiz](https://youtu.be/riDzcEQbX6k)<br />
-[GitHub in a Team](https://jameschambers.co.uk/git-team-workflow-cheatsheet) <br />
-[Forking and Merging GitHub](https://www.youtube.com/watch?v=HbSjyU2vf6Y&amp;ab_channel=TheNetNinja) <br />
+1. Quiz Code modified from youtube tutorial by [Web Simplified](https://youtu.be/riDzcEQbX6k)<br />
+2. [GitHub in a Team](https://jameschambers.co.uk/git-team-workflow-cheatsheet) <br />
+3. [Forking and Merging GitHub](https://www.youtube.com/watch?v=HbSjyU2vf6Y&amp;ab_channel=TheNetNinja) <br />
 
 ### Acknowledgements
 
